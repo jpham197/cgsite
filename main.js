@@ -1,3 +1,25 @@
+//autoplay
+const myAudio = document.getElementById(`myAudio`);
+setTimeout(() => {
+    myAudio.play();
+}, 500);
+
+//volume adjust
+const volume = document.getElementById(`volume`);
+let flag = true;
+volume.addEventListener('click', () => {
+    if (flag == true) {
+        flag = false;
+        myAudio.pause();
+        volume.innerHTML = `volume_off`;
+    } else if (flag == false) {
+        flag = true;
+        myAudio.play();
+        volume.innerHTML = `volume_up`;
+    }
+});
+
+//countdonw
 setInterval(() => {
     let end = new Date('August 18, 2018').getTime();
     let now = new Date().getTime();
@@ -15,3 +37,4 @@ setInterval(() => {
 
     document.getElementById(`timer`).innerHTML = display;
 }, 1000);
+
