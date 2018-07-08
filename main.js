@@ -1,9 +1,3 @@
-//autoplay
-const myAudio = document.getElementById(`myAudio`);
-setTimeout(() => {
-    myAudio.play();
-}, 500);
-
 //volume adjust
 const volume = document.getElementById(`volume`);
 let flag = true;
@@ -38,3 +32,11 @@ setInterval(() => {
     document.getElementById(`timer`).innerHTML = display;
 }, 1000);
 
+function launch() {
+    document.getElementById(`launch2`).classList.add(`launchOut`);
+    document.getElementById(`main`).classList.add(`launchIn`);
+    document.getElementById(`myAudio`).play();
+    setTimeout(() => {
+        document.getElementById(`launch2`).remove();
+    },1500);
+}
