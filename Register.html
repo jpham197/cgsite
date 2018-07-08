@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Register Today</title>
+  </head>
+  <body>
+    <h1> Register</h1>
+<form>
+  <label>FirstName:
+  <input type="text" placeholder="James" required> </label>
+  <label>LastName:
+  <input type="text" placeholder="Le" required> </label>
+
+<div>
+  <label for="Male"> Male</label>
+  <input name="Gender" id= "Male" type="radio" value="Male">
+  <label for="Femle"> Female</label>
+  <input name="Gender" id= "Femle" type="radio" value="Female">
+  <label> Other</label>
+  <input  name="Gender" id="Other" type="radio" value="Other">
+</div>
+<div >
+
+
+  <label>Email:
+  <input name="email" type="email" placeholder="sam12@gmail.com" required> </label>
+  <label>Password
+  <input name="password" type="password" pattern=".{5,12}" required title="5 to 12 characters">
+</label>
+</div>
+  <div>
+    <label>
+      Date Of Birth:
+    <select>
+      <option>Month</option>
+      <option>January</option>
+      <option>Febrauary</option>
+      <option>March</option>
+    </select>
+    <select>
+      <option>Day</option>
+      <option>01</option>
+      <option>02</option>
+      <option>03</option>
+    </select>
+    <select >
+      <option>Year</option>
+      <option>1997</option>
+      <option>1998</option>
+      <option>1999</option>
+    </select> </label>
+  </div>
+  <div>
+    <p>Give Us a breif explantion on why you want to join the Guild?</p>
+    <textarea name="Reason" rows="24" cols="80"></textarea>
+  </div>
+<div>
+  <label for="Agreement"> I agree to the terms and conditions</label>
+  <input id="Agreement" name="Agreement" type="checkbox">
+</div>
+
+
+</form>
+<button>Lets Go!</button>
+  </body>
+</html>
