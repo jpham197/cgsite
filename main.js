@@ -33,10 +33,18 @@ setInterval(() => {
 }, 1000);
 
 function launch() {
-    document.getElementById(`launch2`).classList.add(`launchOut`);
+    //remove button and add main countdown timer
+    let button = document.getElementById(`launch2`);
+    button.style = 'border-radius: 100px';
+    button.classList.add(`launchOut`);
     document.getElementById(`main`).classList.add(`launchIn`);
     document.getElementById(`myAudio`).play();
     setTimeout(() => {
-        document.getElementById(`launch2`).remove();
+        button.remove();
     },1500);
+    
+    //rgb split
+    setTimeout(() => {
+
+    });
 }

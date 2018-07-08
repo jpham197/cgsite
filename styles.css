@@ -27,12 +27,14 @@ html {
     padding: 15px;
     width: 100px;
     text-align: center;
+    border-radius: 100px;
     z-index: 99;
 }
 #launch2:hover {
     border: 2px solid #fff;
     color: white;
     cursor: pointer;
+    animation: curve 1s forwards;
 }
 
 #main {
@@ -104,5 +106,17 @@ a {
 @keyframes disappear {
     to {
         display: none;
+    }
+}
+
+@keyframes curve {
+    to {
+        border-radius: 0px;
+    }
+}
+
+@media (max-height: 690px) {
+    p {
+        color: white;
     }
 }
