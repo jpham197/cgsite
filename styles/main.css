@@ -1,0 +1,13 @@
+html {
+    background: #294F6D;
+}
+
+h1, form {
+    color: #93B5CF;
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
